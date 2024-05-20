@@ -6,9 +6,42 @@ $fa-font-path: "../webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/regular.scss";
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
+@import "~bootstrap/scss/bootstrap.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-p{
-    color: $bluetext;
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    padding: 20px;
+    width: 120px;
+}
+
+nav{
+    align-content: center;
+
+    ul{
+        list-style: none;
+        display: flex;
+
+        li{
+            margin: 0 13px;
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 500;
+                color: $headertext;
+                padding-bottom: 53px;
+                
+                &:hover{
+                    transition: 0.1s;
+                    border-bottom: 5px solid $bluetext;
+                    color: $bluetext;
+                }
+            }
+        }
+    }
 }
