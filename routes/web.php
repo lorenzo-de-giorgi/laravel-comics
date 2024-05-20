@@ -16,5 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $navList = config('db.navList');
     $products = config('db.products');
-    return view('home', compact('navList'), compact(('products')));
+    $comics = config('db.comics');
+    // $shop = config('db.shop');
+    // $dc = config('db.dc');
+    // $sites = config('db.sites');
+    return view('home', compact('navList'), compact('products'), compact('comics'));
 })->name('home');
+
+// , compact('dcComics'), compact('shop'), compact('dc'), compact('sites')
