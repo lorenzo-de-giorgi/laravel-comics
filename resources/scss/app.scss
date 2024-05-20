@@ -28,13 +28,13 @@ nav{
         display: flex;
 
         li{
-            margin: 0 13px;
+            margin: 0 10px;
             a{
                 text-decoration: none;
                 text-transform: uppercase;
                 font-weight: 500;
                 color: $headertext;
-                padding-bottom: 53px;
+                padding-bottom: 42px;
                 
                 &:hover{
                     transition: 0.1s;
